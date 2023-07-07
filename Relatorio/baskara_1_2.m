@@ -3,7 +3,7 @@ clear;
 
 syms a b c x;
 
-a = input("Digite o valor de A: ");
+a = input("Digite o valor de A: "); %digitar os coeficientes da equação
 b = input("Digite o valor de B: ");
 c = input("Digite o valor de C: ");
 polinomio = a*x^2 + b*x + c;
@@ -17,4 +17,7 @@ t = (-b+delta)/baixo; %valor da raiz 1
 k = (-b-delta)/baixo; %valor da raiz 2
 
 disp("x1 = " + t) 
-disp("x2 = "+k) %saída das raízes da equação
+disp("x2 = "+k) %saída das raízes da 
+
+fplot(polinomio) %plotagem do gráfico deste polinômio
+title("Gráfico do polinomio")
