@@ -1,7 +1,7 @@
 clc;
 clear;
 format shortE; %deixa as saídas em notação científica
-syms x
+syms x;
 
 mu_0 = 4*1e-7; % Valor da constante magnética em T·m/A
 n = 25; %numero de espiras
@@ -15,13 +15,13 @@ campo_magnetico = (sqrt(2)*mu_0*n*corrente)*(largura)
 tg_theta = tan(theta)
 
 % GRÁFICO B X TAN(THETA)
-plot(tg_theta, campo_magnetico, 'o-');
+plot(campo_magnetico, tg_theta, 'o'); %plot(x,y)
 xlabel('Campo magnetico');
 ylabel('Tangente de angulo');
 title('Gráfico B x tan(theta)');
 
 %REGRESSÃO LINEAR 
-coeficientes = polyfit(campo_magnetico, tg_theta, 1); % Ajusta uma curva polinomial de grau 1 (regressão linear)
+coeficientes = polyfit(tg_theta, campo_magnetico, 1); % Ajusta uma curva polinomial de grau 1 (regressão linear) polyfit(x,y)
 a = coeficientes(1); % Coeficiente angular (inclinação)
 b = coeficientes(2); % Coeficiente linear (intercepto)
 tendencia = a * x + b; % Valores previstos pela regressão
