@@ -2,12 +2,13 @@ clc;
 clear;
 
 % 1. Especificar o sistema de controle
-num = [1, 1];
-den = [1 10 32 32 0];
+num = [0 1];
+den = [1 8 20 0];
 sys = tf(num, den);
-disp(sys)
+p = feedback (sys, 1);
+
 
 % 2. Plotar o Lugar das Raízes
-rlocus(sys);
-title('Lugar das Raízes do sistema de controle de segunda ordem');
+rlocus(p);
+title('Lugar da Raízes do sistema de controle');
 grid on;
