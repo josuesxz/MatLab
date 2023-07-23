@@ -9,22 +9,15 @@ clear;
 % o grau da lente é o inverso da distância focal em metros 
 lente = input("Qual tipo de lente C ou D: ", 's'); %convergente ou divergente
 
-
-d = input("Distancia focal(cm) ");
-e = input("Erro aproximado(cm): ");
-
 if lente == "d" %lente divergente tem o foco negativo
     d = -d;
 elseif lente == "c"
 else 
     disp("digite um valor válido")
-    return; %interrompe o script
+    return; %interrompe o scrip
 end
 
-espessura = input("Qual a espessura da lente(cm): "); e = espessura/200;
-altura = input("Digite a altura da lente(cm): "); h = altura/200;
-r = (h^2 + e^2)/2*e; %raio da lente 
+d = input("Distancia focal(cm) ");
+e = input("Erro aproximado(cm): ");
 c = 100/d; %vergencia = grau
-n = ((c*r)/2)+1; %indice de refração da lente
-disp("O grau dessa lente é de: " + c + " +/- " + e);
-disp("O raio de curvatura é igual a: "+ r + " cm, e indice de refracao com "+ n);
+disp("O grau dessa lente é de: " + c + " +/- " + e)
