@@ -25,6 +25,5 @@ espessura = input("Qual a espessura da lente(cm): "); e = espessura/200;
 altura = input("Digite a altura da lente(cm): "); h = altura/200;
 r = (h^2 + e^2)/2*e; %raio da lente 
 c = 100/d; %vergencia = grau
-n = ((c*r)/2)+1; %indice de refração da lente
 disp("O grau dessa lente é de: " + c + " +/- " + e);
 disp("O raio de curvatura é igual a: "+ r + " cm, e indice de refracao com "+ n);
