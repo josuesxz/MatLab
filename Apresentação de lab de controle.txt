@@ -1,0 +1,8 @@
+A fazer:
+	> Função de Transferência(Reduzida)
+	> Resposta temporal
+	> Lgr
+	> Bode
+	> Nqyuist 
+	> Analisar estabilidade em todos os gráicos
+	> Extra: Comparar com os controladores (PID e Fuzzy)
