@@ -35,7 +35,7 @@ disp(['zeta = ', num2str(zeta)]);
 disp(['w = ', num2str(w), ' rad/s']);
 
 %RESPOSTA TEMPOAL A UM DEGRAU UNITÁRIO
-info = stepinfo(g);
+info = stepinfo(p1);
 sprintf('Tr =  %.2f s', info.RiseTime) %tempo de subida
 sprintf('Ts = %.2f s', info.SettlingTime) %tempo de acomodação 
 sprintf('MP = %.2f%%', info.Overshoot) %sobresinal
