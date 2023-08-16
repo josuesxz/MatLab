@@ -2,12 +2,14 @@ clc;
 clear;
 
 %DEFINDO A FUNÇÃO DE TRANSFERÊNCIA
-num = exp(-1);
+num = 1;
 den = [1 3 1];
 k = 1; %definido um 'k' qualquer
+h = 1; %Atraso de 1s
 
 p1 = tf(num, den); %sistema de segunda ordem
-p = series(p1, k); %sistema com um ganho 'k' qualquer
+p1.OutputDelay = h; %preparando o valor de atraso
+p = series(p1, k) %sistema com um ganho 'k' qualquer
 g = feedback(p, 1); %sistema sendo realimentado 
 
 %ESPAÇO DE ESTADOS
@@ -26,7 +28,7 @@ sprintf('Raiz = %.2f ', raiz)
 
 %ERRO ESTACIONÁRIO
 Kp = dcgain(g); %calculo de erro para degrau    
-erro_estacionario = 1 / (1 + Kp);
+erro_estacionario = 1 / (1 + Kp)
 
 
 %RESPOSTA DOS GRAFICOS 
@@ -34,7 +36,7 @@ erro_estacionario = 1 / (1 + Kp);
 %rlocus(g);
 %bode(g);
 %nyquist(g);
-%sisotool(g); %mostra todo os resultados acima 
+sisotool(g); %mostra todo os resultados acima 
 %pzmap(g); %mapa de polos e zeros
 
 
