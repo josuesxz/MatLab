@@ -9,12 +9,13 @@ h = 1; %Atraso de 1s
 
 p1 = tf(num, den); %sistema de segunda ordem
 p1.OutputDelay = h; %preparando o valor de atraso
-p = series(p1, k) %sistema com um ganho 'k' qualquer
+p = series(p1, k); %sistema com um ganho 'k' qualquer
 g = feedback(p, 1); %sistema sendo realimentado 
 
 %ESPAÇO DE ESTADOS
 [A, B, C, D] = tf2ss(num, den); %converter FT -> Espaço estados 
 sistema_ss = ss(A, B, C, D);
+
 
 %RESPOSTA TEMPOAL A UM DEGRAU UNITÁRIO
 info = stepinfo(g);
@@ -36,8 +37,5 @@ erro_estacionario = 1 / (1 + Kp)
 %rlocus(g);
 %bode(g);
 %nyquist(g);
-sisotool(g); %mostra todo os resultados acima 
+%sisotool(g); %mostra todo os resultados acima 
 %pzmap(g); %mapa de polos e zeros
-
-
-
