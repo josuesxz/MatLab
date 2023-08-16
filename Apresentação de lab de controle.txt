@@ -1,8 +1,11 @@
 A fazer:
-	> Função de Transferência(Reduzida)*
-	> Resposta temporal*
-	> Lgr*
-	> Bode*
+	> Apresentação
+	> Função de Transferência(Reduzida)**
+	> Resposta temporal**
+	> Espaço de Estado (tem uma função no matlab que faz isso)**
+	> Lgr**
+	> Erro estacionário**
+	> Bode* (margem de ganho e fase)
 	> Nqyuist* 
 	> Analisar estabilidade em todos os gráicos
 	> Extra: Comparar com os controladores (PID e Fuzzy)
