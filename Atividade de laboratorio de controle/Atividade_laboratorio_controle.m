@@ -5,7 +5,7 @@ syms s t;
 %DEFINDO A FUNÇÃO DE TRANSFERÊNCIA
 num = 1;
 den = [1 3 1];
-k = 1; %definido um 'k' qualquer
+k = 1; %definido um 'k' qualquern
 h = 1; %Atraso de 1s
 
 p1 = tf(num, den); %sistema de segunda ordem
@@ -60,5 +60,5 @@ disp(['Frequência de fase -180: ', num2str(wcp), ' rad/s']);
 %rlocus(g);
 %bode(g);
 %nyquist(g);
-%sisotool(g); %mostra todo os resultados acima 
+sisotool(g); %mostra todo os resultados acima 
 %pzmap(g); %mapa de polos e zeros

@@ -2,8 +2,14 @@ clc; clear; close all;
 
 k = 5;
 z = 0.353;
-den = k*k;
-num = [1 2*k*z k*k] ;
+den = [1];
+num = [1 6 8] ;
 
 g = tf(den, num)
+figure;
 bode(g);
+figure
+nyquist(g);
+figure;
+step(g);
+sisotool(g);
