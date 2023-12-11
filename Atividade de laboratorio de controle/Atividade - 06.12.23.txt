@@ -5,3 +5,5 @@ Lab de controle: Anotações de aula
 3) [0 0 1 1]/[1 3 0 0]
 4) Mostrar os parâmetros do sistema como o Overshhot, erro e etc (montados em uma tabela)
 5) 
+
+- 2 respostas: root locus e step response (em malha fechada) 
