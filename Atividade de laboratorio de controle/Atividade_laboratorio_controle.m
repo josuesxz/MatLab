@@ -2,7 +2,7 @@ clc;
 clear;
 syms s t;
 
-%DEFINDO A FUNÇÃO DE TRANSFERÊNCIA
+%DEFINDO A FUNÇÃO DE TRANSFERÊNCIAx 
 num = 1;
 den = [1 3 1];
 k = 1; %definido um 'k' qualquern
