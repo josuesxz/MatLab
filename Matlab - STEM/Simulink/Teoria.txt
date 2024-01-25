@@ -1,0 +1,10 @@
+						SIMULINK
+
+- Simulação de diversos sistemas
+- Simulink library
+
+Blank model -> library -> funções
+
+- Scope é uma forma rápida de vizualizar sinais
+
+Config modelos --> Solver --> Type: Fixed-step (1e-3/ODE3)

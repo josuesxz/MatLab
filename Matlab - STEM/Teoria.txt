@@ -1,0 +1,33 @@
+				MATLAB
+
+- Software de computação científica (Engenharia, matemática, física, biológica e afins)
+- Linguagem de alto nível
+- Suas bibliotecas (toolboxes) permitem várias aplicações
+- Técnicas de visão computacional
+
+- Não há a necessidade em compilar toda hora
+- Não declaramos o tipo de variável!! 
+
+				NOÇÕES BÁSIAS
+
+- Comand window (compilador rápido): 
+	* As variáveis que ficam armazenadas de forma rápida
+- O editor que é o ambiente que nós programamos e iniciamos o "run", se selecionamos
+uma linha em específico e clicamos em "evalute selection" (ou F9) ele roda apenas a
+linha selecionada
+
+- % simboliza o comentário no matlab
+- Ctrl+r faz o comentário em várias linhas selecionadas
+- Ctrl+t descomenta a linha selecionada caso hja comentário
+- Ao final da linha se colocarmos ";" não printa o resultado desta linha
+
+- A adição de "..." faz a intender que o interpretador leia a próxima linha com a anterior
+- O Matlab interpreta linha por linha 
+- "help" + função --> Mostra no console o que significa tal função
+- "home" + "Layout" + "Default" --> Faz retornar a interface padrão do Matlab	
+
+				PERSONALIZAÇÃO EM MATLAB
+
+- Home + preferences --> faz as mudanças de cores e temas do sofware 
+- Fonte em "Monospace"
+- 
